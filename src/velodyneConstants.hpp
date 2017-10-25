@@ -6,11 +6,11 @@
 
 namespace velodyne_lidar
 {
-
+    // TODO Make (some) constants configurable
     static const unsigned int VELODYNE_NUM_SHOTS = 12; // The number of shots per packet
     static const unsigned int VELODYNE_NUM_LASER_CHANNELS = 32; // The number of lasers per shot
     static const unsigned int VELODYNE_ORIENTATION_READINGS = 3; // The number of orientation readings
-    static const unsigned int MIN_SENSING_DISTANCE = 500; //1m in 2mm units
+    static const unsigned int MIN_SENSING_DISTANCE = 50; // 0.1m in 2mm units
     static const unsigned int MAX_SENSING_DISTANCE = 35000; //70m in 2mm units
     static const unsigned int VELODYNE_DATA_MSG_BUFFER_SIZE = 1206; //The size of a data packet
     static const unsigned int VELODYNE_POSITIONING_MSG_BUFFER_SIZE = 512; //The size of a positioning packet
